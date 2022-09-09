@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta  http-equiv="X-UA-Compatible"  content="IE=edge"  />
+<meta  name="viewport"  content="width=device-width,  initial-scale=1.0"
+/>
+<title>Color  Fade</title>
+<style> body {
+transition:  background-color  2s;
+}
+</style>
+</head>
+<body>
+<script>
+var  colors  =  ["red",  "blue",  "green",  "yellow","black","white"]; var  currentIndex  =  0;
+
+setInterval(function  ()  { document.body.style.cssText  =
+"background-color:" + colors[currentIndex]; currentIndex++;
+
+if  (currentIndex  ==  undefined  ||  currentIndex  >=  colors.length)  { currentIndex  =  0;
+}
+},  1000);
+</script>
+</body>
+</html> 
